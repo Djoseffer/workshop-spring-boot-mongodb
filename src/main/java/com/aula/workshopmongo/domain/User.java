@@ -6,12 +6,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
 @Getter
 @Document(collection = "user")
 public class User implements Serializable {
-@Id
+    @Id
     private String id;
     private String name;
     private String email;
